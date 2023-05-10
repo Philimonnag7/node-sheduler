@@ -11,5 +11,8 @@ rule.minute = 40;
 const job = schedule.scheduleJob(rule, function(){
   console.log('Hallelujha God is with me...');
 });
+const job2 = schedule.scheduleJob("**/1***", function(){
+    console.log('Hallelujha God is with me 2...');
+  });
 
 app.listen(PORT, () => { console.log(`Jesus is with me.${PORT}`) });
